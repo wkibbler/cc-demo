@@ -1,0 +1,83 @@
+{
+  "name": "react-dsl",
+  "version": "1.0.0",
+  "repository": "https://github.com/libtechnologies-io/react-dsl",
+  "author": "L.I.B. Technologies Limited",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.12.13",
+    "@restart/context": "^2.1.4",
+    "@restart/hooks": "^0.3.26",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.1",
+    "@types/classnames": "^2.3.1",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.27",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "@types/react-router": "^5.1.11",
+    "@types/react-router-dom": "^5.1.7",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "classnames": "^2.2.6",
+    "dom-helpers": "^5.2.0",
+    "downshift": "^6.1.0",
+    "mobx": "^6.1.6",
+    "mobx-react-lite": "^3.2.0",
+    "node-sass": "^5.0.0",
+    "prop-types": "^15.7.2",
+    "prop-types-extras": "^0.0.0-4",
+    "react": "^17.0.1",
+    "react-app-rewire-hot-loader": "^2.0.1",
+    "react-bootstrap": "^1.4.3",
+    "react-dom": "^17.0.1",
+    "react-hook-form-devtools": "^1.2.0",
+    "react-hot-loader": "^4.13.0",
+    "react-modal": "^3.12.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.2",
+    "react-spring": "^8.0.27",
+    "ts-transformer-keys": "^0.4.3",
+    "typescript": "^4.1.5"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "CI=false react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "size": "npm run build &&  size-limit",
+    "fonts": "cd src/scripts && ts-node generate-typography.ts",
+    "colors": "cd src/scripts && ts-node generate-colors.ts"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@size-limit/preset-app": "^4.6.0",
+    "customize-cra": "^1.0.0",
+    "faker": "^5.1.0",
+    "plop": "^2.7.4",
+    "react-app-rewired": "^2.1.6",
+    "size-limit": "^4.6.0",
+    "surge": "^0.21.6",
+    "ts-node": "^8.10.2"
+  },
+  "size-limit": [
+    {
+      "path": "build/static/**/*.{js,css}"
+    }
+  ]
+}

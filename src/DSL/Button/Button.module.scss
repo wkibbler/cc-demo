@@ -1,0 +1,37 @@
+.button {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+  }
+  
+  .button:hover {
+      opacity: 0.8;
+  }
+  
+  .loading {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border-top-color:rgba(0,0,0,0.3);
+    animation: loading 1.2s linear infinite;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+  }
+  
+  .button:focus {
+      outline: none;
+  }
+  
+  @keyframes loading{
+    0% {
+      transform:rotate(0deg)
+    }
+    100% {
+      transform:rotate(360deg)
+    }
+  }
+  
+  .hide-loading {
+    display: none;
+  }

@@ -1,0 +1,38 @@
+@import "../../theme/theme";
+
+.pane {
+  //overflow: hidden;
+  display: block;
+}
+
+.pane-shadow {
+  box-shadow: 0px 2px 20px #e7e7e7;
+}
+
+.pane-sm,
+.pane-md,
+.pane-lg {
+  border-radius: map-get($spacers, sm);
+}
+
+.pane-xs {
+  padding: map-get($spacers, xs);
+  border-radius: map-get($spacers, xs);
+}
+
+.pane-sm {
+  padding: map-get($spacers, sm);
+}
+
+.pane-md {
+  padding: map-get($spacers, md);
+}
+
+.pane-lg {
+  padding: map-get($spacers, lg);
+
+}
+
+.no-padding {
+  padding: 0px;
+}

@@ -1,0 +1,18 @@
+import React from "react";
+import classNames from "classnames";
+import styles from './{{properCase name}}.module.scss';
+import {css} from '../../helpers/css';
+import Typography, {TType} from '../../DSL/Typography/Typography';
+import observeMobx from '../../observeMobx';
+import {useAppStore} from '../../store/App.store';
+import Colors from '../../DSL/Colors';
+
+export interface {{properCase name}}Props {
+
+}
+
+const {{properCase name}} = observeMobx((props: {{properCase name}}Props) => {
+    const app = useAppStore();
+    return <div>Hello {{properCase name}}</div>
+})
+export default {{properCase name}};

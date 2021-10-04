@@ -1,0 +1,26 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(135,143,157,0.8);
+    animation: fadeIn 0.5s;
+}
+
+.content {
+    z-index: 2;
+    opacity: 1;
+    width: 500px;
+}
+
+.close {
+    cursor: pointer;
+    transition: 1 cubic-bezier(.25,.8,.25,1);
+    -webkit-transition: 1 cubic-bezier(.25,.8,.25,1);
+}
+
+@keyframes fadeIn {
+    0% {background-color: rgba(135,143,157,0.1);}
+    100% {background-color: rgba(135,143,157,0.8);}
+}
